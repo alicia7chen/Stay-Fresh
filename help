@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<form action="ReceiveItem.php" method="post">
+Item: <input type="text" name="item">
+<input type= "submit">
+
+
+</form>
+<?php>
+$query = "INSERT INTO food_names (iduser_profile, fooditems_name) VALUES (0, "item"); ";
+//query/command for printing columns from table fooditems
+$query = "SELECT * FROM food items; ";
+
+//query to link two tables
+$query = "SELECT fooditems.name, fooditems.category, fooditems.storage, fooditems.how_long
+FROM fooditems
+INNER JOIN food_names ON food_names.fooditems_name=fooditems.name; " ;
+
+
+?>
+
+
+</body>
+</html>
