@@ -1,0 +1,9 @@
+
+<html>
+<body>
+
+<br> <br> <br>
+Your food item is <?php echo$_POST["item"]; ?>
+
+</body>
+</html>
