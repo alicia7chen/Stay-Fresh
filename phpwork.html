@@ -3,13 +3,14 @@
 
 <head>
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
    <style>
       body {
         font-family: 'Lobster', cursive;
       }
   </style>
 
-  <title>Opened Countertop</title>
+  <title> My Pantry</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,12 +31,12 @@
   <a href="PantryMenu.html" class="btn btn-info btn-lg">
           <span class="glyphicon glyphicon-grain"></span> Return to Pantry Selection
         </a>
-  <p style= "text-align: center"> <br> <br> <br> <br> <br> <br> <br> My Countertop </p>
+  <p style= "text-align: center"> <br> <br> <br> <br> <br> <br> <br> My Pantry </p>
 <div class="container">
   <table class="table table-hover">
     <thead>
       <tr>
-        <th style="text-align:center", colspan="3", class="danger">Expires Within Three Days</th>
+        <th style="text-align:center", colspan="3", class="danger">Expires Now</th>
 
       </tr>
     </thead>
@@ -56,7 +57,7 @@
             exit(1);
           }
           while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
-            echo($row['name'] . " " . $row['category'] ." ". $row['storage'] ." ". $row['how_long'] . " ");
+            echo nl2br($row['name'] . "&nbsp"  . $row['category'] . "&nbsp". $row['storage'] ."&nbsp" . $row['how_long'] . "\n");
           }
           ?>
        </td>
@@ -70,7 +71,7 @@
   <table class="table table-hover">
     <thead>
       <tr>
-        <th style="text-align:center", colspan="3", class="warning">Expires Within One Week</th>
+        <th style="text-align:center", colspan="3", class="warning">Expires Within a Week</th>
 
       </tr>
     </thead>
@@ -101,3 +102,4 @@
 </div>
 </body>
 </html>
+
