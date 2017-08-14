@@ -49,9 +49,10 @@
 <div class="dropdown">
 <button onclick="myFunction()" class="dropbtn">Menu</button>
   <div id="myDropdown" class="dropdown-content">
-    <a href="NewFoodItem.html">Enter Food Item</a>
-    <a href="PantryMenu.html">View Pantry</a>
-    <a href="About.html">Credits/Info</a>
+    <a href="Index.php">Home Page</a>
+    <a href="Search.php">Search Item</a>
+    <a href="PantryMenu.php">View Pantry</a>
+    <a href="About.php">Credits/Info</a>
   </div>
 </div>
 
@@ -79,6 +80,7 @@ window.onclick = function(event) {
         font-family: 'Lobster', cursive;
       }
 </style>
+  
 <div class="container">
   <h2>My Pantry</h2>
   <p>Access Food Items here!</p>
@@ -86,37 +88,58 @@ window.onclick = function(event) {
   <div class="row">
     <div class="col-md-4">
       <div class="thumbnail">
-        <a href="OpenedCounter.html">
-          <img src="cuttingboard.png" alt="countertop" style="width:100%">
+        <a href="#">
+          <img src="kitchen.jpg" alt="kitchen" style="width:100%">
           <div class="caption">
-            <p style="text-align:center">My Countertop</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="OpenedFridge.html">
-          <img src="goodrefrig.png" alt="refrigerator" style="width:100%">
-          <div class="caption">
-            <p style="text-align:center">My Refrigerator</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="OpenedFreezer.html">
-          <img src="icebox.png" alt="freezer" style="width:100%">
-          <div class="caption">
-            <p style="text-align:center">My Freezer</p>
+            <p style="text-align:center">My Pantry</p>
           </div>
         </a>
       </div>
     </div>
   </div>
+  
 </div>
+ 
+<style>
+th {
+  text-align: left;
+  color: red;
+}
+  
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
 
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+</style>
+  
+
+  
+<table style="width:100%">
+  <tr>
+    <th>Food Item</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
 
 
 </body>
