@@ -194,7 +194,6 @@ th, td {
 }
 </style>
 
-action="/sample/ReceiveItem.php" method= "post"
 
 <!--<table style="width:100%">
   <tr>
